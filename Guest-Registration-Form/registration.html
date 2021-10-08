@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;700&display=swap" rel="stylesheet">
+    <title>Guest Registration</title>
+</head>
+<body>
+    <main>
+        <div class="form">
+            <h1 style="text-align:center;">
+               Guest Check-in
+            </h1>
+            <form action="" id="registration-form" autocomplete="off">
+
+                <label for="firstname" id="firstname-label" name= "firstname" class= "label">
+                    <h3>First Name</h3>
+                </label>
+                <input class= "form-field" type="text" id= "firstname"  name= "firstname" required autocomplete= "off">
+                
+                <label for="lastname" id="lastname-label" name= "lastname" class= "label">
+                    <h3>Last Name</h3>
+                </label>
+                <input class= "form-field" type="text" id= "lastname"  name= "lastname" required>
+                
+                <label for="emailId" id="emailId-label" name= "emailId" class= "label">
+                    <h3>Email Id</h3>
+                </label>
+                <input class= "form-field" type="email" id= "emailId" name= "emailId" required>
+                
+                <label for="mobileNo" id="mobileNo-label" name= "mobileNo" class= "label">
+                    <h3>Mobile Number</h3>
+                </label>
+                <input class= "form-field" type="tel" id= "mobileNo" name= "mobileNo" required>
+                
+                <label for="checkIn" id="checkIn-label" name= "checkIn" class= "label">
+                    <h3>Check In</h3>
+                </label>
+                <input class= "form-field" type="date" id= "checkIn" name= "checkIn" required>
+                
+                <label for="checkOut" id="checkOut-label" name= "checkOut" class= "label">
+                    <h3>Check Out</h3>
+                </label>
+                <input class= "form-field" type="date" id= "checkOut" name= "checkOut" required>
+                
+                <label for="roomNo" id="lastname-label" name= "roomNo" class= "label">
+                    <h3>Room No</h3>
+                </label>
+                <input class= "form-field" type="text" id= "roomNo" name= "roomNo" required>
+                
+                <input type="button" name="submit" value="SUBMIT" class= "button">
+
+            </form>
+        </div>
+    </main>
+</body>
+</html>
