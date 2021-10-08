@@ -9,7 +9,7 @@ const mongoose = require("mongoose");
 const guestRoute = require("./routes/guest-route.js")
 
 //Connecting MongoDb to mongoose
-const connectionSting = "mongodb+srv://db_GoldenCamels:astro1234@cluster0.m6jwx.mongodb.net/goldenProject?retryWrites=true&w=majority";
+const connectionString = "mongodb+srv://db_GoldenCamels:astro1234@cluster0.m6jwx.mongodb.net/goldenProject?retryWrites=true&w=majority";
 
 //Configuring MongoDB connection to mongoose
 const connectionConfig = {
@@ -17,7 +17,7 @@ const connectionConfig = {
     useUnifiedTopology: true
 };
 
-mongoose.connect(connectionSting,connectionConfig)
+mongoose.connect(connectionString,connectionConfig)
 .then(
     function(){
         console.log("This is a promise")
