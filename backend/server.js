@@ -8,6 +8,12 @@ const mongoose = require("mongoose");
 //Importing the guest route
 const guestRoute = require("./routes/guest-route.js")
 
+//Importing the food-menu route
+const foodMenuRoute =  require("./routes/foodMenu-route")
+
+//Importing the spa-service route
+const spaServiceRoute =  require("./routes/spaService-route")
+
 //Connecting MongoDb to mongoose
 const connectionString = "mongodb+srv://db_GoldenCamels:astro1234@cluster0.m6jwx.mongodb.net/goldenProject?retryWrites=true&w=majority";
 
@@ -38,8 +44,12 @@ mongoose.connect(connectionString,connectionConfig)
 server.use(express.urlencoded({extended: false}));
 // Configuration for JSON format
 server.use(express.json());
-//Configration for routes
+//Configration for routes and '/guest' is implied
 server.use('/guest', guestRoute);
+//Configration for routes and '/food-menu' is implied
+server.use('/food-menu', foodMenuRoute);
+//Configration for routes and '/spa-service' is implied
+server.use('/spa-services', spaServiceRoute);
 
 
 // server.get(

@@ -22,22 +22,22 @@ const GuestSchema = new mongoose.Schema({
         },
         checkIn: {
             type: Date,
-            required: true
+            default: Date.now
         },
         checkOut: {
             type: Date,
-            required: true
+            default: Date.now
         },
         roomNo: {
             type: String,
             required: true
         }
     }
-);
+)
 
 // Creating a model for Guests
 
-const GuestModel = mongoose.model("guests", GuestSchema);
+const GuestModel = mongoose.model("guest", GuestSchema);
 
 // Export the model
 
