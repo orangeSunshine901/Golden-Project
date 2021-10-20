@@ -71,7 +71,7 @@ h3{
     border: none;
     color: var(--primaryColor);
     background-color: var(--secondaryColor);
-    width: 60%;
+    max-width: 60%;
     font-size: 0.8rem;
     margin-top: 1.3em;
     position: absolute;
