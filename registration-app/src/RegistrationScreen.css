@@ -46,7 +46,8 @@ h3{
 
 @media only screen and (max-width: 800px) {
     .form {
-      width: 15em;
+      width: 30em;
+      padding: 4em;
     }
   }
 
@@ -65,17 +66,28 @@ h3{
 
 }
 
+@media only screen and (max-width: 800px) {
+    .form-field {
+      width: 100%;
+      padding: 1em;
+    }
+    .label{
+        text-align: center;
+    }
+  }
+
 .button{
+    display: block;
+    margin: auto;
+    text-align: center;
     height: 2.5em;
     border-radius: 0.30em;
     border: none;
     color: var(--primaryColor);
     background-color: var(--secondaryColor);
-    width: 60%;
+    width: 90%;
     font-size: 0.8rem;
     margin-top: 1.3em;
-    position: absolute;
-    right: 10em;
     cursor: pointer;
     font-size: 0.8rem;
 }
@@ -91,8 +103,7 @@ h3{
 
 @media only screen and (max-width: 800px) {
     .button {
-        position: absolute;
-        width:40%;
+        width:100%;
         left: 10em;
     }
   }

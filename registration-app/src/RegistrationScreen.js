@@ -1,7 +1,5 @@
 import './RegistrationScreen.css';
 import React, { useState } from 'react';
-import DateTimePicker from 'react-datetime-picker';
-import 'react-calendar/dist/Calendar.css';
 
 
 
@@ -40,7 +38,7 @@ function RegistrationScreen(){
                         <h3>Check In</h3>
                     </label>
                     
-                    <DateTimePicker onChange={onChange} value={value} style={{"color":"red"}}/>
+                    <input className= "form-field" type="date" id= "checkIn" name= "checkIn" required/>                    
                     
                     <label for="checkOut" id="checkOut-label" name= "checkOut" className= "label">
                         <h3>Check Out</h3>
@@ -51,8 +49,8 @@ function RegistrationScreen(){
                         <h3>Room No</h3>
                     </label>
                     <input className= "form-field" type="text" id= "roomNo" name= "roomNo" required/>
-                    
-                    <input type="button" name="submit" value="SUBMIT" className= "button"/>
+
+                    <input type="button" name="submit" value="submit" className= "button"/>
 
                 </form>
             </div>
